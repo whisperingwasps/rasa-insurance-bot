@@ -37,13 +37,13 @@
 
 - welcome
   - utter_default_welcome
-- premium_due
+- fund_value
   - utter_fund_value
-- any other info
+- any_other_info
   - utter_any_other_info
-- did that help
+- did_that_help
   - utter_did_that_help
-- yes it helped
+- yes_it_helped
   - utter_happy
   - utter_any_other_info
 
