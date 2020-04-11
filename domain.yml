@@ -1,37 +1,119 @@
-intents:
-  - greet
-  - Default Welcome Intent
-  - GET_PRIV_PREMIUM_DUE
-  - GET_PRIV_PUB_FUND_VALUE
-  - GET_PRIV_PREMIUM_PAYMENT_DOCS
-  - PAY_NOW_LINK
-  - goodbye
-
-#entities:
-#- PREMIUM_PAYMENT_DOCS
-
-responses:
-  utter_greet:
-    - text: "Hey! How are you?"
-  utter_did_that_help:
-    - text: "Did that help you?"
-  utter_iamabot:
-    - text: "I am a bot, powered by Rasa."
-  utter_default_welcome:
-    - text: "Hey this is Khushi! How can I help you today?"
-  utter_premium_due:
-    - text: "Your premium due is INR 1000."
-  utter_fund_value:
-    - text: "Your fund value is INR 100."
-  utter_renewal_receipt:
-    - text: "Please download your renewal premium receipt below."
-  utter_premium_certificate:
-    - text: "Please download your premium paid certificate below."
-  utter_pay_now:
-    - text: "Please click below to pay now."
-  utter_any_other_info:
-    - text: "Any other details you want to know about your policy?"
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- greet
+- Default Welcome Intent
+- GET_PRIV_PREMIUM_DUE
+- GET_PRIV_PUB_FUND_VALUE
+- GET_PRIV_PREMIUM_PAYMENT_DOCS
+- PAY_NOW_LINK
+- goodbye
+- GET_PRIV_CHANGE_POLICY
+- GET_PRIV_MATURITY_BENEFITS
+- CHANGE_PRIV_DETAILS
+- GET_PRIV_PREMIUM_DOCS
+- WAYS_PAY_PREMIUM
+entities:
+- PREMIUM_PAYMENT_DOCS
+- PMLI_UPDATE_PERSONAL_DETAILS
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_default_welcome:
+  - text: Hey this is Khushi! How can I help you today?
+  utter_premium_due:
+  - text: Your premium due is INR 1000.
+  utter_fund_value:
+  - text: Your fund value is INR 100.
+  utter_renewal_receipt:
+  - text: Please download your renewal premium receipt below.
+  utter_premium_certificate:
+  - text: Please download your premium paid certificate below.
+  utter_pay_now:
+  - text: Please click below to pay now.
+  utter_any_other_info:
+  - text: Any other details you want to know about your policy?
+actions:
+- utter_greet
+- utter_did_that_help
+- utter_iamabot
+- utter_default_welcome
+- utter_premium_due
+- utter_fund_value
+- utter_renewal_receipt
+- utter_premium_certificate
+- utter_pay_now
+- utter_any_other_info
+- Why did the astronaut feel claustrophobic?.................She just needed some
+  space
+- chitchat/youAreBad
+- I can help you to find restaurants based your preferred location
+- I try to live everyday like its my birthday. I get more cakes that way.
+- Right here in this app. Whenever you need me.
+- Terribly Sorry to hear that
+- greet
+- chitchat/ask_weather
+- chitchat/Annoying
+- premium_due
+- chitchat/ask_HowDoing
+- chitchat/help
+- chitchat/utter_smalltalk_agent_answer_my_question
+- chitchat/ask_HowOld
+- chitchat/Beautiful
+- Thanks, You are beautiful too, inside and out.
+- Old enough to be a bot.
+- Not as of now
+- Somewhere on the earth ;)
+- I am great! Thanks for asking.
+- Sorry, can you try asking again please
+- I am sorry you felt that way. Stick with me, I get better in time.
+- any other info
+- chitchat/ask_wherefrom
+- chitchat/outOfScope
+- chitchat/joke
+- chitchat/utter_happy
+- chitchat/smalltalk_agent_acquaintance
+- chitchat/utter_smalltalk_agent_bad
+- chitchat/utter_sorry
+- mood_great
+- Can you try asking it a different way?
+- chitchat/bot_challenge
+- I am glad I could be of some help to you.
+- chitchat/AnswerMyQuestion
+- welcome
+- Sorry, I can''t deal with that request.
+- chitchat/smalltalk_agent_age
+- Sorry to come across that way.
+- chitchat/Thanks
+- no it did not help
+- Stick with me. I keep getting better in time.
+- Sorry about that.
+- Sure, see you soon
+- chitchat/residence
+- yes it helped
+- Age is just a number. You are only as old as you feel.
+- chitchat/utter_smalltalk_agent_annoying
+- chitchat/Boring
+- Yes, I am a bot
+- Hey
+- bot_challenge
+- chitchat/Boss
+- I can help you search restaurants, just type I am feeling hungry
+- chitchat/whyLocation
+- goodbye
+- I guess since I am here to help you, you are. I'm so lucky to have a such a great
+  boss.
+- chitchat/Greeting
+- It is sunny where I live
+- I help you work smarter instead of harder.
+- Sorry.
+- You are welcome, always at your service
+- did that help
+- chitchat/cantHelp
+- chitchat/utter_goodbye
+- chitchat/BirthDate
