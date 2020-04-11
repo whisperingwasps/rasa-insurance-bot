@@ -2,7 +2,6 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet
 - Default Welcome Intent
 - GET_PRIV_PREMIUM_DUE
 - GET_PRIV_PUB_FUND_VALUE
@@ -117,3 +116,7 @@ actions:
 - chitchat/cantHelp
 - chitchat/utter_goodbye
 - chitchat/BirthDate
+- did_that_help
+- yes_it_helped
+- fund_value
+- any_other_info

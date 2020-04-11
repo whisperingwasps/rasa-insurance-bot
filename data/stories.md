@@ -1,21 +1,14 @@
-## happy path
-
-- greet
-  - utter_greet
-- mood_great
-  - utter_happy
-
 ## premium due happy path
 
 - welcome
   - utter_default_welcome
 - premium_due
   - utter_premium_due
-- any other info
+- any_other_info
   - utter_any_other_info
-- did that help
+- did_that_help
   - utter_did_that_help
-- yes it helped
+- yes_it_helped
   - utter_happy
   - utter_any_other_info
 
@@ -25,11 +18,11 @@
   - utter_default_welcome
 - premium_due
   - utter_premium_due
-- any other info
+- any_other_info
   - utter_any_other_info
-- did that help
+- did_that_help
   - utter_did_that_help
-- no it did not help
+- no_it_did_not_help
   - utter_sorry
   - utter_any_other_info
 
@@ -53,11 +46,11 @@
   - utter_default_welcome
 - premium_due
   - utter_fund_value
-- any other info
+- any_other_info
   - utter_any_other_info
-- did that help
+- did_that_help
   - utter_did_that_help
-- no it did not help
+- no_it_did_not_help
   - utter_sorry
   - utter_any_other_info
 
@@ -65,13 +58,13 @@
 
 - welcome
   - utter_default_welcome
-- premium_due
+- renewal_receipts
   - utter_renewal_receipt
-- any other info
+- any_other_info
   - utter_any_other_info
-- did that help
+- did_that_help
   - utter_did_that_help
-- yes it helped
+- yes_it_helped
   - utter_happy
   - utter_any_other_info
 
@@ -79,13 +72,13 @@
 
 - welcome
   - utter_default_welcome
-- premium_due
+- renewal_receipts
   - utter_renewal_receipt
-- any other info
+- any_other_info
   - utter_any_other_info
-- did that help
+- did_that_help
   - utter_did_that_help
-- no it did not help
+- no_it_did_not_help
   - utter_sorry
   - utter_any_other_info
 
@@ -93,13 +86,13 @@
 
 - welcome
   - utter_default_welcome
-- premium_due
+- pay_now
   - utter_pay_now
-- any other info
+- any_other_info
   - utter_any_other_info
-- did that help
+- did_that_help
   - utter_did_that_help
-- yes it helped
+- yes_it_helped
   - utter_happy
   - utter_any_other_info
 
@@ -107,13 +100,13 @@
 
 - welcome
   - utter_default_welcome
-- premium_due
+- pay_now
   - utter_pay_now
-- any other info
+- any_other_info
   - utter_any_other_info
-- did that help
+- did_that_help
   - utter_did_that_help
-- no it did not help
+- no_it_did_not_help
   - utter_sorry
   - utter_any_other_info
 
