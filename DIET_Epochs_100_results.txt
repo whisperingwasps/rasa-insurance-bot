@@ -1,0 +1,634 @@
+NLU model loaded. Type a message and press enter to parse it.
+Next message:
+fund value what tell me i need to know
+{
+  "intent": {
+    "name": "GET_PRIV_FUND_DETAILS",
+    "confidence": 0.46040672063827515
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_FUND_DETAILS",
+      "confidence": 0.46040672063827515
+    },
+    {
+      "name": "GET_PRIV_PUB_FUND_VALUE",
+      "confidence": 0.3875722885131836
+    },
+    {
+      "name": "GET_PRIV_POLICY_BENEFITS",
+      "confidence": 0.05665851756930351
+    },
+    {
+      "name": "GET_PUB_BEST_PERFORMING_FUND_DETAILS",
+      "confidence": 0.03779762238264084
+    },
+    {
+      "name": "GET_PUB_GENERAL_BENEFITS",
+      "confidence": 0.02511572651565075
+    },
+    {
+      "name": "GET_PUB_FUND_SWITCH_DETAILS",
+      "confidence": 0.008965122513473034
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_PRODUCTS_PLANS",
+      "confidence": 0.008194290101528168
+    },
+    {
+      "name": "GET_PRIV_DEATH_BENEFIT_DETAILS",
+      "confidence": 0.005983517970889807
+    },
+    {
+      "name": "GET_PUB_PREMIUM_DIFFERENT_FUND_DETAILS",
+      "confidence": 0.004704512655735016
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_ARTICLES",
+      "confidence": 0.00460166297852993
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "fund value what tell me i need to know"
+}
+Next message:
+fund value
+{
+  "intent": {
+    "name": "GET_PRIV_PUB_FUND_VALUE",
+    "confidence": 0.9603952765464783
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_PUB_FUND_VALUE",
+      "confidence": 0.9603952765464783
+    },
+    {
+      "name": "GET_PRIV_FUND_DETAILS",
+      "confidence": 0.019621623679995537
+    },
+    {
+      "name": "GET_PUB_BEST_PERFORMING_FUND_DETAILS",
+      "confidence": 0.00892490055412054
+    },
+    {
+      "name": "GET_PUB_FUND_SWITCH_DETAILS",
+      "confidence": 0.0029113737400621176
+    },
+    {
+      "name": "GIVE_FALLBACK",
+      "confidence": 0.002308928407728672
+    },
+    {
+      "name": "Default Welcome Intent",
+      "confidence": 0.0018564255442470312
+    },
+    {
+      "name": "TalkBack_EmailId1",
+      "confidence": 0.0016731293871998787
+    },
+    {
+      "name": "GET_PRIV_DOWNLOAD_DOCUMENTS",
+      "confidence": 0.0010115769691765308
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_PRODUCTS_PLANS",
+      "confidence": 0.0006578355678357184
+    },
+    {
+      "name": "GET_PRIV_POLICY_BENEFITS",
+      "confidence": 0.0006389629561454058
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "fund value"
+}
+Next message:
+what do you think I have to pay to not be alerted next month?
+{
+  "intent": {
+    "name": "GET_PRIV_PREMIUM_DUE",
+    "confidence": 0.9401963353157043
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_PREMIUM_DUE",
+      "confidence": 0.9401963353157043
+    },
+    {
+      "name": "WAYS_PAY_PREMIUM",
+      "confidence": 0.017379961907863617
+    },
+    {
+      "name": "GET_PUB_PREMIUM_DIFFERENT_FUND_DETAILS",
+      "confidence": 0.013785725459456444
+    },
+    {
+      "name": "HELP_SHOW_MENU",
+      "confidence": 0.007220817264169455
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_ARTICLES",
+      "confidence": 0.006595814600586891
+    },
+    {
+      "name": "GET_PRIV_MATURITY_BENEFIT",
+      "confidence": 0.004706651903688908
+    },
+    {
+      "name": "PAY_NOW_LINK",
+      "confidence": 0.0035217187833040953
+    },
+    {
+      "name": "GET_PUB_BRANCH_LOCATION_DETAILS_NEAREST",
+      "confidence": 0.002385417465120554
+    },
+    {
+      "name": "GET_PRIV_CALL_BACK - yes",
+      "confidence": 0.002132418332621455
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_PROTECTION",
+      "confidence": 0.0020751426927745342
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "what do you think I have to pay to not be alerted next month?"
+}
+Next message:
+how much is my current investment trading
+{
+  "intent": {
+    "name": "GET_PRIV_FUND_DETAILS",
+    "confidence": 0.30584385991096497
+  },
+  "entities": [
+    {
+      "entity": "PMLI_COMPANY_HEADS",
+      "start": 23,
+      "end": 33,
+      "extractor": "DIETClassifier",
+      "value": "<re>9.1.1.1,9.51.1,9.3.1,9.3.2,9.3.3,5.2.4,5.2.5,5.2.6,5.2.8</re>",
+      "processors": [
+        "EntitySynonymMapper"
+      ]
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_FUND_DETAILS",
+      "confidence": 0.30584385991096497
+    },
+    {
+      "name": "KNOW_DIRECTIONS_APP_MENU",
+      "confidence": 0.300182580947876
+    },
+    {
+      "name": "GET_PRIV_TRACK_POLICY_DOCS",
+      "confidence": 0.19980362057685852
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_RETIREMENT",
+      "confidence": 0.07126347720623016
+    },
+    {
+      "name": "ExistingCustomer_Welcome",
+      "confidence": 0.048901405185461044
+    },
+    {
+      "name": "GET_PRIV_POLICY_DOCS",
+      "confidence": 0.020688990131020546
+    },
+    {
+      "name": "GET_PRIV_LAST_PREMIUM_DETAILS",
+      "confidence": 0.01913026161491871
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_PROTECTION",
+      "confidence": 0.012287922203540802
+    },
+    {
+      "name": "GET_PUB_PREMIUM_DIFFERENT_FUND_DETAILS",
+      "confidence": 0.011980373412370682
+    },
+    {
+      "name": "TalkBack_EmailId1",
+      "confidence": 0.009917556308209896
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "how much is my current investment trading"
+}
+Next message:
+i no longer use the email that I used to. Any CLUE on what has to be done next?
+{
+  "intent": {
+    "name": "GET_PRIV_POLICY_DETAILS",
+    "confidence": 0.3989008665084839
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_POLICY_DETAILS",
+      "confidence": 0.3989008665084839
+    },
+    {
+      "name": "GET_PRIV_POLICY_DOCS",
+      "confidence": 0.1119578406214714
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_RETIREMENT",
+      "confidence": 0.10075169801712036
+    },
+    {
+      "name": "GET_PUB_PROCESS_BUY_POLICY_ONLINE",
+      "confidence": 0.06292347609996796
+    },
+    {
+      "name": "GET_PRIV_PREEMPTIVE_QUERIES",
+      "confidence": 0.061546240001916885
+    },
+    {
+      "name": "CHANGE_PRIV_DETAILS",
+      "confidence": 0.06101173162460327
+    },
+    {
+      "name": "GET_PRIV_DOWNLOAD_DOCUMENTS",
+      "confidence": 0.054816003888845444
+    },
+    {
+      "name": "GET_PRIV_TRACK_POLICY_DOCS",
+      "confidence": 0.05060227960348129
+    },
+    {
+      "name": "GET_PUB_PREMIUM_DIFFERENT_FUND_DETAILS",
+      "confidence": 0.05048994719982147
+    },
+    {
+      "name": "GET_PRIV_CHANGE_POLICY",
+      "confidence": 0.04699993133544922
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "i no longer use the email that I used to. Any CLUE on what has to be done next?"
+}
+Next message:
+i no longer use the email that I used to. Any clue on what needs to be done yet?       
+{
+  "intent": {
+    "name": "GET_PUB_SERVICE_TOUCHPOINT_DETAILS",
+    "confidence": 0.22829848527908325
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PUB_SERVICE_TOUCHPOINT_DETAILS",
+      "confidence": 0.22829848527908325
+    },
+    {
+      "name": "CHANGE_PRIV_DETAILS",
+      "confidence": 0.14596228301525116
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_DOCUMENTS_BANK_UPDATION",
+      "confidence": 0.12591001391410828
+    },
+    {
+      "name": "GET_PRIV_POLICY_DETAILS",
+      "confidence": 0.12148147821426392
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_RETIREMENT",
+      "confidence": 0.09693404287099838
+    },
+    {
+      "name": "GET_PRIV_PREEMPTIVE_QUERIES",
+      "confidence": 0.06713832169771194
+    },
+    {
+      "name": "GET_PUB_PROCESS_BUY_POLICY_ONLINE",
+      "confidence": 0.058631330728530884
+    },
+    {
+      "name": "GET_PRIV_TRACK_POLICY_DOCS",
+      "confidence": 0.056092359125614166
+    },
+    {
+      "name": "VIEW_PRIV_DETAILS",
+      "confidence": 0.052877411246299744
+    },
+    {
+      "name": "GET_PRIV_POLICY_DOCS",
+      "confidence": 0.046674199402332306
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "i no longer use the email that I used to. Any clue on what needs to be done yet?"
+}
+Next message:
+what are the best options that you have in which i can start putting my money in?
+{
+  "intent": {
+    "name": "GET_PRIV_POLICY_DETAILS",
+    "confidence": 0.3331298828125
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_POLICY_DETAILS",
+      "confidence": 0.3331298828125
+    },
+    {
+      "name": "WAYS_PAY_PREMIUM",
+      "confidence": 0.16898027062416077
+    },
+    {
+      "name": "GET_PRIV_PREMIUM_DUE",
+      "confidence": 0.09866656363010406
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_PRODUCTS_PLANS",
+      "confidence": 0.09484996646642685
+    },
+    {
+      "name": "GET_PRIV_LAST_PREMIUM_DETAILS",
+      "confidence": 0.08751361072063446
+    },
+    {
+      "name": "GET_PRIV_OUTSTANDING_PREMIUM",
+      "confidence": 0.05314960330724716
+    },
+    {
+      "name": "GET_PUB_PREMIUM_DIFFERENT_FUND_DETAILS",
+      "confidence": 0.04960335046052933
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_PROTECTION",
+      "confidence": 0.04015212133526802
+    },
+    {
+      "name": "GET_PUB_GENERAL_BENEFITS",
+      "confidence": 0.03866598755121231
+    },
+    {
+      "name": "GET_PRIV_CHANGE_POLICY",
+      "confidence": 0.03528868407011032
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "what are the best options that you have in which i can start putting my money in?"
+}
+Next message:
+what are the best options you have for my investment?
+{
+  "intent": {
+    "name": "GET_PRIV_FUND_DETAILS",
+    "confidence": 0.679646909236908
+  },
+  "entities": [
+    {
+      "entity": "PMLI_GET_FUND_DETAILS",
+      "start": 42,
+      "end": 52,
+      "extractor": "DIETClassifier",
+      "value": "<re>9.1.1.1,9.51.1,9.3.1,9.3.2,9.3.3,5.2.4,5.2.5,5.2.6,5.2.8</re>",
+      "processors": [
+        "EntitySynonymMapper"
+      ]
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_FUND_DETAILS",
+      "confidence": 0.679646909236908
+    },
+    {
+      "name": "GET_PUB_BEST_PERFORMING_FUND_DETAILS",
+      "confidence": 0.08047276735305786
+    },
+    {
+      "name": "GET_PUB_PREMIUM_DIFFERENT_FUND_DETAILS",
+      "confidence": 0.054940443485975266
+    },
+    {
+      "name": "KNOW_DIRECTIONS_APP_MENU",
+      "confidence": 0.049671489745378494
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_RETIREMENT",
+      "confidence": 0.041328418999910355
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_PRODUCTS_PLANS",
+      "confidence": 0.026506749913096428
+    },
+    {
+      "name": "GET_PUB_FUND_SWITCH_DETAILS",
+      "confidence": 0.022064652293920517
+    },
+    {
+      "name": "TalkBack_EmailId1",
+      "confidence": 0.01609823852777481
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_INVESTMENT_PHILOSOPHY",
+      "confidence": 0.014847989194095135
+    },
+    {
+      "name": "GET_PRIV_PUB_FUND_VALUE",
+      "confidence": 0.014422349631786346
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "what are the best options you have for my investment?"
+}
+Next message:
+why are you doing this to me?
+{
+  "intent": {
+    "name": "GET_PRIV_CALL_BACK - yes",
+    "confidence": 0.5388067960739136
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_CALL_BACK - yes",
+      "confidence": 0.5388067960739136
+    },
+    {
+      "name": "WAYS_PAY_PREMIUM",
+      "confidence": 0.12330804020166397
+    },
+    {
+      "name": "GET_PUB_PROCESS_BUY_POLICY_ONLINE",
+      "confidence": 0.07615386694669724
+    },
+    {
+      "name": "KNOW_STEPS_DEBIT_OPTIONS",
+      "confidence": 0.058486223220825195
+    },
+    {
+      "name": "SET_ONE_TIME_REMINDER",
+      "confidence": 0.04692923277616501
+    },
+    {
+      "name": "Default Fallback Intent",
+      "confidence": 0.040565382689237595
+    },
+    {
+      "name": "COMPLAINTS",
+      "confidence": 0.03745840862393379
+    },
+    {
+      "name": "GET_PRIV_PREMIUM_DUE",
+      "confidence": 0.029161497950553894
+    },
+    {
+      "name": "SET_PRIV_REMINDER",
+      "confidence": 0.025442328304052353
+    },
+    {
+      "name": "GET_PUB_PMLI_BANK_DETAILS",
+      "confidence": 0.02368825301527977
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "why are you doing this to me?"
+}
+Next message:
+what do you think of me?
+{
+  "intent": {
+    "name": "GET_PUB_BRANCH_LOCATION_DETAILS",
+    "confidence": 0.34419476985931396
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PUB_BRANCH_LOCATION_DETAILS",
+      "confidence": 0.34419476985931396
+    },
+    {
+      "name": "GET_PRIV_OUTSTANDING_PREMIUM",
+      "confidence": 0.2279355674982071
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_ARTICLES",
+      "confidence": 0.1126253604888916
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_PROTECTION",
+      "confidence": 0.09112976491451263
+    },
+    {
+      "name": "HELP_SHOW_MENU",
+      "confidence": 0.05144428461790085
+    },
+    {
+      "name": "GET_PRIV_PREMIUM_DUE",
+      "confidence": 0.04618440568447113
+    },
+    {
+      "name": "GET_PRIV_MATURITY_BENEFIT",
+      "confidence": 0.04406747221946716
+    },
+    {
+      "name": "GET_PUB_PMLI_BANK_DETAILS",
+      "confidence": 0.032208677381277084
+    },
+    {
+      "name": "TalkBack_address",
+      "confidence": 0.026971425861120224
+    },
+    {
+      "name": "GET_PRIV_CALL_BACK - yes",
+      "confidence": 0.023238305002450943
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "what do you think of me?"
+}
+Next message:

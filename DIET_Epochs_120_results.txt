@@ -1,0 +1,858 @@
+NLU model loaded. Type a message and press enter to parse it.
+Next message:
+view bank details
+{
+  "intent": {
+    "name": "VIEW_PRIV_DETAILS",
+    "confidence": 0.9696223139762878
+  },
+  "entities": [
+    {
+      "entity": "VIEW_PERSONAL_DETAILS",
+      "start": 5,
+      "end": 17,
+      "extractor": "DIETClassifier",
+      "value": "<re>1.18.1,1.18.2,1.12.2,1.12.3,1.12.4,1.5.4,1.5.5,1.5.6,1.5.8</re>",
+      "processors": [
+        "EntitySynonymMapper"
+      ]
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "VIEW_PRIV_DETAILS",
+      "confidence": 0.9696223139762878
+    },
+    {
+      "name": "CHANGE_PRIV_DETAILS",
+      "confidence": 0.014141961000859737
+    },
+    {
+      "name": "GET_PRIV_PREMIUM_DUE",
+      "confidence": 0.0033661643974483013
+    },
+    {
+      "name": "GET_PRIV_CALL_BACK - no",
+      "confidence": 0.00249605649150908
+    },
+    {
+      "name": "GET_PUB_ARTICLE_DETAILS_SAVING",
+      "confidence": 0.00204324908554554
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_SAVINGS",
+      "confidence": 0.001964620081707835
+    },
+    {
+      "name": "SET_FREQUENT_REMINDER",
+      "confidence": 0.0018799466779455543
+    },
+    {
+      "name": "KNOW_DIRECTIONS_APP_MENU",
+      "confidence": 0.0016192434122785926
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_DOCUMENTS_BANK_UPDATION",
+      "confidence": 0.0015562499174848199
+    },
+    {
+      "name": "GET_PUB_BRANCH_LOCATION_DETAILS_CITY - fallback",
+      "confidence": 0.0013102059019729495
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "view bank details"
+}
+Next message:
+update bank detials
+{
+  "intent": {
+    "name": "CHANGE_PRIV_DETAILS",
+    "confidence": 0.9783539772033691
+  },
+  "entities": [
+    {
+      "entity": "PMLI_UPDATE_PERSONAL_DETAILS",
+      "start": 7,
+      "end": 11,
+      "extractor": "DIETClassifier",
+      "value": "<ctype>11</ctype><URL>BankUpdateFormLink</URL><text>Sure I can take your request however hope the copy of the below documents are saved on this mobile device:<br>1.One ID Proof (PAN, Passport or Aadhaar)<br>2.Your recent photograph<br>3.Cancelled cheque copy or bank statement<br><br>Click below to proceed if all the above 3 documents are available</text><actionName>Bank_Update</actionName><actionUrlType>0</actionUrlType>",
+      "processors": [
+        "EntitySynonymMapper"
+      ]
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "CHANGE_PRIV_DETAILS",
+      "confidence": 0.9783539772033691
+    },
+    {
+      "name": "SET_FREQUENT_REMINDER - Due_Date_Reminder",
+      "confidence": 0.009091067127883434
+    },
+    {
+      "name": "COUNTER_ABUSE",
+      "confidence": 0.0030568649526685476
+    },
+    {
+      "name": "GET_PUB_CONVRSE_DETAILS",
+      "confidence": 0.0025691583286970854
+    },
+    {
+      "name": "GET_PRIV_PREEMPTIVE_QUERIES",
+      "confidence": 0.0023979665711522102
+    },
+    {
+      "name": "GET_PUB_BRANCH_LOCATION_DETAILS_STATE",
+      "confidence": 0.00136739038862288
+    },
+    {
+      "name": "GET_PUB_STANDING_INSTRUCTION_DETAILS",
+      "confidence": 0.0009572164271958172
+    },
+    {
+      "name": "GET_PUB_BRANCH_LOCATION_DETAILS_CITY",
+      "confidence": 0.0008517016540281475
+    },
+    {
+      "name": "GET_PUB_ARTICLE_DETAILS_SAVING",
+      "confidence": 0.0007384329801425338
+    },
+    {
+      "name": "VIEW_PRIV_DETAILS",
+      "confidence": 0.0006161911878734827
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "update bank detials"
+}
+Next message:
+cco
+{
+  "intent": {
+    "name": "KNOW_PMLI_DETAILS_COMPANY_HEADS",
+    "confidence": 0.9567995071411133
+  },
+  "entities": [
+    {
+      "entity": "PMLI_COMPANY_HEADS",
+      "start": 0,
+      "end": 3,
+      "extractor": "DIETClassifier",
+      "value": "Sarang Cheema is the Chief Compliance Officer at PNB MetLife.",
+      "processors": [
+        "EntitySynonymMapper"
+      ]
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "KNOW_PMLI_DETAILS_COMPANY_HEADS",
+      "confidence": 0.9567995071411133
+    },
+    {
+      "name": "GET_PUB_BRANCH_LOCATION_DETAILS_CITY - fallback",
+      "confidence": 0.028301501646637917
+    },
+    {
+      "name": "Default Fallback Intent",
+      "confidence": 0.005261345766484737
+    },
+    {
+      "name": "GET_PRIV_CALL_BACK - yes",
+      "confidence": 0.0035550377797335386
+    },
+    {
+      "name": "GET_PUB_BRANCH_LOCATION_DETAILS",
+      "confidence": 0.0014749780530110002
+    },
+    {
+      "name": "GET_PUB_BRANCH_LOCATION_DETAILS_CITY",
+      "confidence": 0.001148018054664135
+    },
+    {
+      "name": "GET_PRIV_CALL_BACK - no",
+      "confidence": 0.0010895852465182543
+    },
+    {
+      "name": "GET_PUB_MEET_ADVISOR_DETAILS",
+      "confidence": 0.0010000074980780482
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_SATARA_MARATHON",
+      "confidence": 0.0007787917274981737
+    },
+    {
+      "name": "Default Welcome Intent",
+      "confidence": 0.0005912519991397858
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "cco"
+}
+Next message:
+fund value what tell me i need to know
+{
+  "intent": {
+    "name": "GET_PRIV_PUB_FUND_VALUE",
+    "confidence": 0.8995920419692993
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_PUB_FUND_VALUE",
+      "confidence": 0.8995920419692993
+    },
+    {
+      "name": "GET_PRIV_FUND_DETAILS",
+      "confidence": 0.048911694437265396
+    },
+    {
+      "name": "GET_PUB_GENERAL_BENEFITS",
+      "confidence": 0.01740656979382038
+    },
+    {
+      "name": "GET_PRIV_POLICY_BENEFITS",
+      "confidence": 0.007190824951976538
+    },
+    {
+      "name": "GET_PUB_PROCESS_BUY_POLICY_ONLINE",
+      "confidence": 0.0063657620921730995
+    },
+    {
+      "name": "GET_PRIV_LOAN_ON_POLICY",
+      "confidence": 0.005863584578037262
+    },
+    {
+      "name": "GET_PUB_INSURANCE_ADVICE",
+      "confidence": 0.00533121544867754
+    },
+    {
+      "name": "GET_PRIV_OUTSTANDING_PREMIUM",
+      "confidence": 0.003374306717887521
+    },
+    {
+      "name": "GET_PUB_BEST_PERFORMING_FUND_DETAILS",
+      "confidence": 0.003089158097282052
+    },
+    {
+      "name": "Default Fallback Intent",
+      "confidence": 0.002874913392588496
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "fund value what tell me i need to know"
+}
+Next message:
+fund value
+{
+  "intent": {
+    "name": "GET_PRIV_PUB_FUND_VALUE",
+    "confidence": 0.9776203632354736
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_PUB_FUND_VALUE",
+      "confidence": 0.9776203632354736
+    },
+    {
+      "name": "GET_PRIV_FUND_DETAILS",
+      "confidence": 0.00823243148624897
+    },
+    {
+      "name": "Default Fallback Intent",
+      "confidence": 0.004505462944507599
+    },
+    {
+      "name": "GET_PRIV_CALL_BACK - no",
+      "confidence": 0.0026156699750572443
+    },
+    {
+      "name": "GET_PRIV_DOWNLOAD_DOCUMENTS",
+      "confidence": 0.0020253730472177267
+    },
+    {
+      "name": "GET_PRIV_OUTSTANDING_PREMIUM",
+      "confidence": 0.001295916037634015
+    },
+    {
+      "name": "GET_PUB_INSURANCE_ADVICE",
+      "confidence": 0.0010104816174134612
+    },
+    {
+      "name": "GET_PUB_GENERAL_BENEFITS",
+      "confidence": 0.0009916872950270772
+    },
+    {
+      "name": "GET_PRIV_DEATH_BENEFIT_DETAILS",
+      "confidence": 0.0009018288110382855
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_WEALTH",
+      "confidence": 0.0008007648284547031
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "fund value"
+}
+Next message:
+what do you think I have to pay to not be alerted next month?
+{
+  "intent": {
+    "name": "GET_PRIV_PREMIUM_DUE",
+    "confidence": 0.6160551309585571
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_PREMIUM_DUE",
+      "confidence": 0.6160551309585571
+    },
+    {
+      "name": "WAYS_PAY_PREMIUM",
+      "confidence": 0.1239435225725174
+    },
+    {
+      "name": "PAY_NOW_LINK",
+      "confidence": 0.06019836664199829
+    },
+    {
+      "name": "GET_PRIV_POLICY_DOCS",
+      "confidence": 0.04972358047962189
+    },
+    {
+      "name": "SUBMIT_FORM_DGH",
+      "confidence": 0.03694133460521698
+    },
+    {
+      "name": "GET_PRIV_PREEMPTIVE_QUERIES",
+      "confidence": 0.02977333962917328
+    },
+    {
+      "name": "KNOW_DIRECTIONS_APP_MENU",
+      "confidence": 0.029046952724456787
+    },
+    {
+      "name": "GET_PRIV_CALL_BACK - no",
+      "confidence": 0.02473261207342148
+    },
+    {
+      "name": "CHANGE_PRIV_DETAILS",
+      "confidence": 0.015766723081469536
+    },
+    {
+      "name": "GET_PUB_PREMIUM_DIFFERENT_FUND_DETAILS",
+      "confidence": 0.01381844375282526
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "what do you think I have to pay to not be alerted next month?"
+}
+Next message:
+how much is my current investment trading
+{
+  "intent": {
+    "name": "GET_PRIV_OUTSTANDING_PREMIUM",
+    "confidence": 0.2848820984363556
+  },
+  "entities": [
+    {
+      "entity": "PMLI_COMPANY_HEADS",
+      "start": 23,
+      "end": 33,
+      "extractor": "DIETClassifier",
+      "value": "<re>9.1.1.1,9.51.1,9.3.1,9.3.2,9.3.3,5.2.4,5.2.5,5.2.6,5.2.8</re>",
+      "processors": [
+        "EntitySynonymMapper"
+      ]
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_OUTSTANDING_PREMIUM",
+      "confidence": 0.2848820984363556
+    },
+    {
+      "name": "GET_PRIV_POLICY_STATUS_DETAILS",
+      "confidence": 0.1589498668909073
+    },
+    {
+      "name": "GET_PRIV_POLICY_DOCS",
+      "confidence": 0.09845337271690369
+    },
+    {
+      "name": "GET_PUB_PROCESS_BUY_POLICY_ONLINE",
+      "confidence": 0.08872601389884949
+    },
+    {
+      "name": "GET_PUB_BEST_PERFORMING_FUND_DETAILS",
+      "confidence": 0.06764059513807297
+    },
+    {
+      "name": "GET_PRIV_PREMIUM_DUE",
+      "confidence": 0.06695441156625748
+    },
+    {
+      "name": "GET_PRIV_FUND_DETAILS",
+      "confidence": 0.06681418418884277
+    },
+    {
+      "name": "GET_PRIV_PUB_FUND_VALUE",
+      "confidence": 0.05937107279896736
+    },
+    {
+      "name": "PAY_NOW_LINK",
+      "confidence": 0.05861922353506088
+    },
+    {
+      "name": "GET_PRIV_TRACK_POLICY_DOCS",
+      "confidence": 0.04958919435739517
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "how much is my current investment trading"
+}
+Next message:
+i no longer use the email that I used to. Any CLUE on what has to be done next?
+{
+  "intent": {
+    "name": "KNOW_DIRECTIONS_APP_MENU",
+    "confidence": 0.2763339877128601
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "KNOW_DIRECTIONS_APP_MENU",
+      "confidence": 0.2763339877128601
+    },
+    {
+      "name": "GET_PRIV_POLICY_DOCS",
+      "confidence": 0.25187239050865173
+    },
+    {
+      "name": "GET_PRIV_PREMIUM_DUE",
+      "confidence": 0.14364399015903473
+    },
+    {
+      "name": "GET_PRIV_PREEMPTIVE_QUERIES",
+      "confidence": 0.09958471357822418
+    },
+    {
+      "name": "CHANGE_PRIV_DETAILS",
+      "confidence": 0.08498476445674896
+    },
+    {
+      "name": "PAY_NOW_LINK",
+      "confidence": 0.05768435820937157
+    },
+    {
+      "name": "Default Welcome Intent",
+      "confidence": 0.029438652098178864
+    },
+    {
+      "name": "GET_PRIV_POLICY_DETAILS",
+      "confidence": 0.025403335690498352
+    },
+    {
+      "name": "ExistingCustomer_Welcome",
+      "confidence": 0.01894843764603138
+    },
+    {
+      "name": "GET_PRIV_MATURITY_BENEFIT",
+      "confidence": 0.01210546214133501
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "i no longer use the email that I used to. Any CLUE on what has to be done next?"
+}
+Next message:
+i no longer use the email that I used to. Any clue on what needs to be done yet? 
+{
+  "intent": {
+    "name": "GET_PRIV_POLICY_DOCS",
+    "confidence": 0.32010164856910706
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_POLICY_DOCS",
+      "confidence": 0.32010164856910706
+    },
+    {
+      "name": "KNOW_DIRECTIONS_APP_MENU",
+      "confidence": 0.21571139991283417
+    },
+    {
+      "name": "GET_PRIV_PREEMPTIVE_QUERIES",
+      "confidence": 0.0963919386267662
+    },
+    {
+      "name": "GET_PRIV_PREMIUM_DUE",
+      "confidence": 0.07950396090745926
+    },
+    {
+      "name": "PAY_NOW_LINK",
+      "confidence": 0.07473579049110413
+    },
+    {
+      "name": "Default Welcome Intent",
+      "confidence": 0.0657905861735344
+    },
+    {
+      "name": "CHANGE_PRIV_DETAILS",
+      "confidence": 0.049541693180799484
+    },
+    {
+      "name": "GET_PRIV_POLICY_DETAILS",
+      "confidence": 0.03890758007764816
+    },
+    {
+      "name": "GET_PRIV_MATURITY_BENEFIT",
+      "confidence": 0.03218946233391762
+    },
+    {
+      "name": "GET_PUB_SERVICE_TOUCHPOINT_DETAILS",
+      "confidence": 0.027125898748636246
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "i no longer use the email that I used to. Any clue on what needs to be done yet?"
+}
+Next message:
+what are the best options that you have in which i can start putting my money in?
+{
+  "intent": {
+    "name": "GET_PRIV_POLICY_DETAILS",
+    "confidence": 0.25069743394851685
+  },
+  "entities": [
+    {
+      "entity": "PMLI_POLICY_DETAILS",
+      "start": 55,
+      "end": 60,
+      "extractor": "DIETClassifier",
+      "value": "start"
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_POLICY_DETAILS",
+      "confidence": 0.25069743394851685
+    },
+    {
+      "name": "GET_PRIV_PREEMPTIVE_QUERIES",
+      "confidence": 0.2185954600572586
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_HEALTH",
+      "confidence": 0.13832849264144897
+    },
+    {
+      "name": "GET_PRIV_PREMIUM_DUE",
+      "confidence": 0.08427373319864273
+    },
+    {
+      "name": "HELP_SHOW_MENU",
+      "confidence": 0.06528355181217194
+    },
+    {
+      "name": "GET_PRIV_FUND_DETAILS",
+      "confidence": 0.058464933186769485
+    },
+    {
+      "name": "GET_PUB_GENERAL_BENEFITS",
+      "confidence": 0.05643366649746895
+    },
+    {
+      "name": "GET_PRIV_POLICY_BENEFITS",
+      "confidence": 0.04921792820096016
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_PROTECTION",
+      "confidence": 0.03983002156019211
+    },
+    {
+      "name": "GET_PUB_PROCESS_BUY_POLICY_ONLINE",
+      "confidence": 0.0388747863471508
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "what are the best options that you have in which i can start putting my money in?"
+}
+Next message:
+what are the best options you have for my investment?
+{
+  "intent": {
+    "name": "GET_PRIV_FUND_DETAILS",
+    "confidence": 0.4733300507068634
+  },
+  "entities": [
+    {
+      "entity": "PMLI_GET_FUND_DETAILS",
+      "start": 42,
+      "end": 52,
+      "extractor": "DIETClassifier",
+      "value": "<re>9.1.1.1,9.51.1,9.3.1,9.3.2,9.3.3,5.2.4,5.2.5,5.2.6,5.2.8</re>",
+      "processors": [
+        "EntitySynonymMapper"
+      ]
+    }
+  ],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_FUND_DETAILS",
+      "confidence": 0.4733300507068634
+    },
+    {
+      "name": "GET_PUB_GENERAL_BENEFITS",
+      "confidence": 0.1292843520641327
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_PROTECTION",
+      "confidence": 0.10064423084259033
+    },
+    {
+      "name": "GET_PUB_BEST_PERFORMING_FUND_DETAILS",
+      "confidence": 0.08742062002420425
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_RETIREMENT",
+      "confidence": 0.0753616914153099
+    },
+    {
+      "name": "HELP_SHOW_MENU",
+      "confidence": 0.044415827840566635
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_WEALTH",
+      "confidence": 0.03466648980975151
+    },
+    {
+      "name": "GET_PRIV_OUTSTANDING_PREMIUM",
+      "confidence": 0.021822072565555573
+    },
+    {
+      "name": "GET_PRIV_POLICY_DOCS",
+      "confidence": 0.019606243818998337
+    },
+    {
+      "name": "TalkBack_EmailId1",
+      "confidence": 0.013448517769575119
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "what are the best options you have for my investment?"
+}
+Next message:
+why are you doing this to me?
+{
+  "intent": {
+    "name": "GET_PRIV_MATURITY_BENEFIT",
+    "confidence": 0.3947369158267975
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "GET_PRIV_MATURITY_BENEFIT",
+      "confidence": 0.3947369158267975
+    },
+    {
+      "name": "Default Welcome Intent",
+      "confidence": 0.17010048031806946
+    },
+    {
+      "name": "SET_ONE_TIME_REMINDER - Personal_Reminder_Text",
+      "confidence": 0.1360853761434555
+    },
+    {
+      "name": "SET_ONE_TIME_REMINDER",
+      "confidence": 0.10472622513771057
+    },
+    {
+      "name": "GET_PUB_BEST_PERFORMING_FUND_DETAILS",
+      "confidence": 0.047015540301799774
+    },
+    {
+      "name": "SET_FREQUENT_REMINDER - Personal_Reminder",
+      "confidence": 0.04257117211818695
+    },
+    {
+      "name": "SET_ONE_TIME_REMINDER - Personal_Reminder_Text - Remind",
+      "confidence": 0.03394916281104088
+    },
+    {
+      "name": "GET_PUB_SERVICE_TOUCHPOINT_DETAILS",
+      "confidence": 0.025448115542531013
+    },
+    {
+      "name": "GET_PUB_GENERAL_BENEFITS",
+      "confidence": 0.023483246564865112
+    },
+    {
+      "name": "GET_PUB_BRANCH_LOCATION_DETAILS_NEAREST",
+      "confidence": 0.021883729845285416
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "why are you doing this to me?"
+}
+Next message:
+what do you think of me?
+{
+  "intent": {
+    "name": "SUBMIT_FORM_DGH",
+    "confidence": 0.23193606734275818
+  },
+  "entities": [],
+  "intent_ranking": [
+    {
+      "name": "SUBMIT_FORM_DGH",
+      "confidence": 0.23193606734275818
+    },
+    {
+      "name": "Default Fallback Intent",
+      "confidence": 0.14575116336345673
+    },
+    {
+      "name": "HELP_SHOW_MENU",
+      "confidence": 0.12489248812198639
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_PRODUCTS_PLANS",
+      "confidence": 0.1238747239112854
+    },
+    {
+      "name": "COMPLAINTS",
+      "confidence": 0.08839083462953568
+    },
+    {
+      "name": "Default Welcome Intent",
+      "confidence": 0.08019662648439407
+    },
+    {
+      "name": "GET_PUB_GENERAL_BENEFITS",
+      "confidence": 0.07777784764766693
+    },
+    {
+      "name": "GET_PUB_PLAN_DETAILS_HEALTH",
+      "confidence": 0.06659867614507675
+    },
+    {
+      "name": "KNOW_PMLI_DETAILS_SATARA_MARATHON",
+      "confidence": 0.03039357252418995
+    },
+    {
+      "name": "SET_PRIV_REMINDER",
+      "confidence": 0.030187923461198807
+    }
+  ],
+  "response_selector": {
+    "default": {
+      "response": {
+        "name": null,
+        "confidence": 0.0
+      },
+      "ranking": []
+    }
+  },
+  "text": "what do you think of me?"
+}
+Next message:

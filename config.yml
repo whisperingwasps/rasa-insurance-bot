@@ -1,0 +1,28 @@
+# Configuration for Rasa NLU.
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+pipeline:
+  - name: ConveRTTokenizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: ConveRTFeaturizer
+  #- name: CountVectorsFeaturizer
+  #  analyzer: "char_wb"
+  #  min_ngram: 1
+  #  max_ngram: 4
+  - name: DIETClassifier
+    epochs: 75
+    intent_classification: "True"
+    entity_recognition: "True"
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    retrieval_intent: chitchat
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: MemoizationPolicy
+  - name: TEDPolicy
+    max_history: 5
+    epochs: 100
+  - name: MappingPolicy
