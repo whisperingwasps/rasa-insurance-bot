@@ -2,7 +2,7 @@
 
 * welcome
   - utter_default_welcome
-* premium_due
+* GET_PRIV_PREMIUM_DUE
   - utter_premium_due
 * any_other_info
   - utter_any_other_info
@@ -16,7 +16,7 @@
 
 * welcome
   - utter_default_welcome
-* premium_due
+* GET_PRIV_PREMIUM_DUE
   - utter_premium_due
 * any_other_info
   - utter_any_other_info
@@ -30,7 +30,7 @@
 
 * welcome
   - utter_default_welcome
-* fund_value
+* GET_PRIV_PUB_FUND_VALUE
   - utter_fund_value
 * any_other_info
   - utter_any_other_info
@@ -44,7 +44,7 @@
 
 * welcome
   - utter_default_welcome
-* premium_due
+* GET_PRIV_PUB_FUND_VALUE
   - utter_fund_value
 * any_other_info
   - utter_any_other_info
@@ -58,7 +58,7 @@
 
 * welcome
   - utter_default_welcome
-* renewal_receipts {"PREMIUM_PAYMENT_DOCS":"receipt"}
+* {"PREMIUM_PAYMENT_DOCS":"receipt"}
   - utter_renewal_receipt
 * any_other_info
   - utter_any_other_info
