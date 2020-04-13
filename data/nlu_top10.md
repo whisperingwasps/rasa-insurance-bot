@@ -1,4 +1,14 @@
+## intent:welcome
+
+- hi there
+- greetings
+- long time no see
+- hello
+- lovely day isn't it
+- I greet you
+
 ## intent:GET_PRIV_CHANGE_POLICY
+
 - change policy my new policy is 222
 - how to change policy
 - procedure to change of policy
@@ -14,6 +24,7 @@
 - modify my policy
 
 ## intent:GET_PRIV_PREMIUM_DUE
+
 - what is my due?
 - monthly instalment please
 - tell me how much money I have to deposit every month
@@ -28,6 +39,7 @@
 - How much should I renew for my policy
 
 ## intent:GET_PRIV_PUB_FUND_VALUE
+
 - fund value need to know
 - Nav show me
 - current fund tell
@@ -44,6 +56,7 @@
 - cant you tell my value fund
 
 ## intent:GET_PRIV_MATURITY_BENEFITS
+
 - what is the maturity benefit i will get.
 - please tell what's maturity benefits of my police
 - what are maturity benefit of my policy No. 21073922
@@ -59,6 +72,7 @@
 - Tell me the maturity benefits offers?
 
 ## intent:GET_PRIV_PREMIUM_DOCS
+
 - please send my [paid payment certificate](PREMIUM_PAYMENT_DOCS) on my email address
 - [ppc](PREMIUM_PAYMENT_DOCS) required
 - i want my one year [premium certificate](PREMIUM_PAYMENT_DOCS) and latest year
@@ -87,6 +101,7 @@
 - policy number 21652861 in the name of madan dass pl.provide me [policy receipt](PREMIUM_PAYMENT_DOCS)
 
 ## intent:CHANGE_PRIV_DETAILS
+
 - [Email](PMLI_UPDATE_PERSONAL_DETAILS) update form
 - Change my [email id](PMLI_UPDATE_PERSONAL_DETAILS) as rt@hotmail.com
 - i need to update my [email](PMLI_UPDATE_PERSONAL_DETAILS) id
@@ -111,6 +126,7 @@
 - Edit my [bank account](PMLI_UPDATE_PERSONAL_DETAILS) to 123456789123456
 
 ## intent:PAY_NOW_LINK
+
 - i want pay my due policy amount now
 - paying through khusi
 - How we pay money of insurance
@@ -129,6 +145,7 @@
 - how to make policy payment in Khushi app
 
 ## intent:WAYS_PAY_PREMIUM
+
 - what are the different ways of paynent available
 - any more option just like neft etc
 - How do I pay my premium Payment
