@@ -6,7 +6,6 @@
   - utter_premium_due
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * yes_it_helped
   - utter_happy
@@ -20,7 +19,6 @@
   - utter_premium_due
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * no_it_did_not_help
   - utter_sorry
@@ -34,7 +32,6 @@
   - utter_fund_value
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * yes_it_helped
   - utter_happy
@@ -48,7 +45,6 @@
   - utter_fund_value
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * no_it_did_not_help
   - utter_sorry
@@ -62,7 +58,6 @@
   - utter_renewal_receipt
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * yes_it_helped
   - utter_happy
@@ -76,7 +71,6 @@
   - utter_renewal_receipt
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * no_it_did_not_help
   - utter_sorry
@@ -90,7 +84,6 @@
   - utter_renewal_receipt
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * yes_it_helped
   - utter_happy
@@ -104,7 +97,6 @@
   - utter_renewal_receipt
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * no_it_did_not_help
   - utter_sorry
@@ -118,7 +110,6 @@
   - utter_pay_now
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * yes_it_helped
   - utter_happy
@@ -132,7 +123,6 @@
   - utter_pay_now
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * no_it_did_not_help
   - utter_sorry
@@ -146,7 +136,6 @@
   - utter_pay_now
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * yes_it_helped
   - utter_happy
@@ -160,7 +149,6 @@
   - utter_pay_now
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * no_it_did_not_help
   - utter_sorry
@@ -174,7 +162,6 @@
   - utter_pay_now
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * yes_it_helped
   - utter_happy
@@ -188,7 +175,6 @@
   - utter_pay_now
 * any_other_info
   - utter_any_other_info
-* did_that_help
   - utter_did_that_help
 * no_it_did_not_help
   - utter_sorry
