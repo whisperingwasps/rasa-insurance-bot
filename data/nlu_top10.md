@@ -163,3 +163,25 @@
 - plz help me to pay policy
 - how to deposit my met life premium
 - Is there an option to pay top up premium?
+
+
+## intent:yes_it_helped
+- yes
+- indeed
+- of course
+- that sounds good
+- correct
+
+## intent:no_it_did_not_help
+- no
+- never
+- I don't think so
+- don't like that
+- no way
+- not really
+
+## intent:goodbye
+- bye
+- goodbye
+- see you around
+- see you later
