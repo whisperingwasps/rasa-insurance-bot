@@ -16,6 +16,11 @@ intents:
 entities:
 - PREMIUM_PAYMENT_DOCS
 - PMLI_UPDATE_PERSONAL_DETAILS
+slots:
+PREMIUM_PAYMENT_DOCS:
+  type: text
+PMLI_UPDATE_PERSONAL_DETAILS:
+  type: text
 responses:
   utter_did_that_help:
   - text: Did that help you?
