@@ -39,6 +39,12 @@ responses:
   - text: Happy that I could give the information you asked for.
   utter_goodbye:
   - text: Until next time!
+  utter_ways_to_pay:
+  - text: You can pay your premium through any of the below options: <br> 1.Online <br> 2.NEFT.<br> 3.Cheque or Cash at any PNB MetLife/PNB/JKB/KBL/HDFC branch
+   utter_change_email:
+  - text: To change your email, please click on the link below.
+  utter_change_bank_detail:
+  - text: To change your bank details, please click on the link below.
 actions:
 - utter_did_that_help
 - utter_default_welcome
@@ -47,6 +53,9 @@ actions:
 - utter_renewal_receipt
 - utter_premium_certificate
 - utter_pay_now
+- utter_ways_to_pay
+- utter_change_email
+- utter_change_bank_detail
 - utter_any_other_info
 - utter_sorry
 - utter_happy
