@@ -11,20 +11,14 @@ intents:
 - CHANGE_PRIV_DETAILS
 - GET_PRIV_PREMIUM_DOCS
 - WAYS_PAY_PREMIUM
-- renewal_receipts
 - yes_it_helped
-- did_that_help
-- any_other_info
+- no_it_did_not_help
 entities:
 - PREMIUM_PAYMENT_DOCS
 - PMLI_UPDATE_PERSONAL_DETAILS
 responses:
-  utter_greet:
-  - text: Hey! How are you?
   utter_did_that_help:
   - text: Did that help you?
-  utter_iamabot:
-  - text: I am a bot, powered by Rasa.
   utter_default_welcome:
   - text: Hey this is Khushi! How can I help you today?
   utter_premium_due:
@@ -39,10 +33,14 @@ responses:
   - text: Please click below to pay now.
   utter_any_other_info:
   - text: Any other details you want to know about your policy?
+  utter_sorry:
+  - text: Sorry you felt that way. Stick with me, I keep getting better with time.
+   utter_happy:
+  - text: Happy that I could give the information you asked for.
+  utter_goodbye:
+  - text: Until next time!
 actions:
-- utter_greet
 - utter_did_that_help
-- utter_iamabot
 - utter_default_welcome
 - utter_premium_due
 - utter_fund_value
@@ -50,3 +48,6 @@ actions:
 - utter_premium_certificate
 - utter_pay_now
 - utter_any_other_info
+- utter_sorry
+- utter_happy
+- utter_goodbye
