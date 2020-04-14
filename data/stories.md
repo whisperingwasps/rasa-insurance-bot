@@ -133,7 +133,7 @@
 * welcome
   - utter_default_welcome
 * WAYS_PAY_PREMIUM
-  - utter_pay_now
+  - utter_ways_to_pay
 * any_other_info
   - utter_any_other_info
   - utter_did_that_help
@@ -146,7 +146,7 @@
 * welcome
   - utter_default_welcome
 * WAYS_PAY_PREMIUM
-  - utter_pay_now
+  - utter_ways_to_pay
 * any_other_info
   - utter_any_other_info
   - utter_did_that_help
@@ -159,7 +159,7 @@
 * welcome
   - utter_default_welcome
 * CHANGE_PRIV_DETAILS{"PMLI_UPDATE_PERSONAL_DETAILS":"email"}
-  - utter_pay_now
+  - utter_change_email
 * any_other_info
   - utter_any_other_info
   - utter_did_that_help
@@ -172,7 +172,7 @@
 * welcome
   - utter_default_welcome
 * CHANGE_PRIV_DETAILS{"PMLI_UPDATE_PERSONAL_DETAILS":"bank account"}
-  - utter_pay_now
+  - utter_change_bank_detail
 * any_other_info
   - utter_any_other_info
   - utter_did_that_help
@@ -184,8 +184,3 @@
 
 * goodbye
   - utter_goodbye
-
-## bot challenge
-
-* bot_challenge
-  - utter_iamabot
