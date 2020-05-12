@@ -4,6 +4,7 @@
 - update (aadhar)[PMLI_UPDATE_PERSONAL_DETAILS]
 - (pan number)[PMLI_UPDATE_PERSONAL_DETAILS] alteration
 - updation of (appointee)[PMLI_UPDATE_PERSONAL_DETAILS]
+- [mail](PMLI_UPDATE_PERSONAL_DETAILS) modification
 
 ## intent:VIEW_PRIV_DETAILS
 - view (pan)[PMLI_VIEW_PERSONAL_DETAILS]
