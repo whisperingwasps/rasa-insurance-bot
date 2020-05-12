@@ -2,13 +2,24 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- greet
 - goodbye
-- affirm
-- deny
-- mood_great
-- mood_unhappy
-- bot_challenge
+- no_it_did_not_help
+- welcome
+- utter_sorry
+- GET_PRIV_PUB_FUND_VALUE
+- GET_PRIV_PREMIUM_DUE
+- WAYS_PAY_PREMIUM
+- GET_PRIV_PREMIUM_DOCS
+- yes_it_helped
+- utter_happy
+- CHANGE_PRIV_DETAILS
+- PAY_NOW_LINK
+- any_other_info
+- VIEW_PRIV_DETAILS
+- Default Welcome Intent
+entities:
+- PREMIUM_PAYMENT_DOCS
+- PMLI_UPDATE_PERSONAL_DETAILS
 responses:
   utter_greet:
   - text: Hey! How are you?
@@ -23,6 +34,10 @@ responses:
   - text: Bye
   utter_iamabot:
   - text: I am a bot, powered by Rasa.
+  utter_change_priv_details:
+  - text: Please click on the link below to update {PMLI_UPDATE_PERSONAL_DETAILS}
+  utter_view_priv_details:
+  - text: Please click on the below to view (PMLI_VIEW_PERSONAL_DETAILS}
 actions:
 - utter_greet
 - utter_cheer_up
@@ -30,3 +45,7 @@ actions:
 - utter_happy
 - utter_goodbye
 - utter_iamabot
+- I am glad I could be of some help to you.
+- I am sorry you felt that way. Stick with me, I get better in time.
+- utter_change_priv_details
+- utter_view_priv_details
