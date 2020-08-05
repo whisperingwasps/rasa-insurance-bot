@@ -2,66 +2,50 @@ session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
 intents:
-- welcome
-- GET_PRIV_PREMIUM_DUE
-- GET_PRIV_PUB_FUND_VALUE
-- PAY_NOW_LINK
-- GET_PRIV_CHANGE_POLICY
-- GET_PRIV_MATURITY_BENEFITS
-- CHANGE_PRIV_DETAILS
-- GET_PRIV_PREMIUM_DOCS
-- WAYS_PAY_PREMIUM
-- yes_it_helped
+- goodbye
 - no_it_did_not_help
+- welcome
+- utter_sorry
+- GET_PRIV_PUB_FUND_VALUE
+- GET_PRIV_PREMIUM_DUE
+- WAYS_PAY_PREMIUM
+- GET_PRIV_PREMIUM_DOCS
+- yes_it_helped
+- utter_happy
+- CHANGE_PRIV_DETAILS
+- PAY_NOW_LINK
+- any_other_info
+- VIEW_PRIV_DETAILS
+- Default Welcome Intent
 entities:
 - PREMIUM_PAYMENT_DOCS
 - PMLI_UPDATE_PERSONAL_DETAILS
-slots:
-PREMIUM_PAYMENT_DOCS:
-  type: text
-PMLI_UPDATE_PERSONAL_DETAILS:
-  type: text
 responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
   utter_did_that_help:
   - text: Did that help you?
-  utter_default_welcome:
-  - text: Hey this is Khushi! How can I help you today?
-  utter_premium_due:
-  - text: Your premium due is INR 1000.
-  utter_fund_value:
-  - text: Your fund value is INR 100.
-  utter_renewal_receipt:
-  - text: Please download your renewal premium receipt below.
-  utter_premium_certificate:
-  - text: Please download your premium paid certificate below.
-  utter_pay_now:
-  - text: Please click below to pay now.
-  utter_any_other_info:
-  - text: Any other details you want to know about your policy?
-  utter_sorry:
-  - text: Sorry you felt that way. Stick with me, I keep getting better with time.
-   utter_happy:
-  - text: Happy that I could give the information you asked for.
+  utter_happy:
+  - text: Great, carry on!
   utter_goodbye:
-  - text: Until next time!
-  utter_ways_to_pay:
-  - text: You can pay your premium through any of the below options: <br> 1.Online <br> 2.NEFT.<br> 3.Cheque or Cash at any PNB MetLife/PNB/JKB/KBL/HDFC branch
-   utter_change_email:
-  - text: To change your email, please click on the link below.
-  utter_change_bank_detail:
-  - text: To change your bank details, please click on the link below.
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_change_priv_details:
+  - text: Please click on the link below to update {PMLI_UPDATE_PERSONAL_DETAILS}
+  utter_view_priv_details:
+  - text: Please click on the below to view (PMLI_VIEW_PERSONAL_DETAILS}
 actions:
+- utter_greet
+- utter_cheer_up
 - utter_did_that_help
-- utter_default_welcome
-- utter_premium_due
-- utter_fund_value
-- utter_renewal_receipt
-- utter_premium_certificate
-- utter_pay_now
-- utter_ways_to_pay
-- utter_change_email
-- utter_change_bank_detail
-- utter_any_other_info
-- utter_sorry
 - utter_happy
 - utter_goodbye
+- utter_iamabot
+- I am glad I could be of some help to you.
+- I am sorry you felt that way. Stick with me, I get better in time.
+- utter_change_priv_details
+- utter_view_priv_details
